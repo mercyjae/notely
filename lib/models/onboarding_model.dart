@@ -11,14 +11,14 @@ class OnboardingModel{
 List<OnboardingModel> onboardingList =[
   OnboardingModel(image: 'assets/images/onboarding.png',
       title: "World's Safest And\nLargest Digital Notebook.",
-      subtitle: "Notely is the world's safest, largest and\nintelligent digital notebook. Join over\n10M+"
+      subtitle: "Notely is the world's safest, largest and\nintelligent digital notebook. Join over\n10M+ "
           "users already using Notely",index: 0),
   OnboardingModel(image: 'assets/images/onboarding.png',
       title: "World's Safest And\nLargest Digital Notebook.",
-      subtitle: "Notely is the world's safest, largest and\nintelligent digital notebook. Join over\n10M+"
+      subtitle: "Notely is the world's safest, largest and\nintelligent digital notebook. Join over\n10M+ "
           "users already using Notely",index: 1),
   OnboardingModel(image: 'assets/images/onboarding.png',
       title: "World's Safest And\nLargest Digital Notebook.",
-      subtitle: "Notely is the world's safest, largest and\nintelligent digital notebook. Join over\n10M+"
+      subtitle: "Notely is the world's safest, largest and\nintelligent digital notebook. Join over\n10M+ "
           "users already using Notely", index: 2)
 ];

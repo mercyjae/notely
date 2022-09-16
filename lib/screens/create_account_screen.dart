@@ -11,12 +11,6 @@ class CreateAccount extends StatefulWidget {
 }
 
 class _CreateAccountState extends State<CreateAccount> {
-  late ValueNotifier<int> _currentNotifier;
-  @override
-  void initState() {
-    _currentNotifier = ValueNotifier(0);
-    super.initState();
-  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +19,7 @@ class _CreateAccountState extends State<CreateAccount> {
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(children: [
             const SizedBox(
-              height: 20,
+              height: 30,
             ),
              Text(
               'NOTELY',
@@ -76,7 +70,7 @@ class _CreateAccountState extends State<CreateAccount> {
               subtitle: '#######',
             ),
             const SizedBox(
-              height: 100,
+              height: 110,
             ),
             AppButton(title: 'Create Account', onTap: () {
               Navigator.push(
@@ -89,9 +83,9 @@ class _CreateAccountState extends State<CreateAccount> {
               height: 20,
             ),
             const Text(
-              'Already create an account?',
+              'Already have an account?',
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 18,
                 fontWeight: FontWeight.w800,
                 color: Color(0xFFD9614C),
               ),

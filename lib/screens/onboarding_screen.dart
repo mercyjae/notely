@@ -25,7 +25,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         child: Column(
           children: [
             const SizedBox(
-              height: 20,
+              height: 30,
             ),
              Text(
               'NOTELY',
@@ -33,7 +33,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
             ),
             const SizedBox(
-              height: 100,
+              height: 90,
             ),
             Expanded(
               child: PageView.builder(
@@ -97,9 +97,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       }).toList());
                 }),
             const SizedBox(
-              height: 20,
+              height: 70,
             ),
-            AppButton(title: 'Get Started', onTap: () {
+            AppButton(title: 'GET STARTED', onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const CreateAccount()));
             }, ),
@@ -108,9 +108,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               height: 20,
             ),
             const Text(
-              'Already create an account?',
+              'Already have an account?',
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 18,
                 fontWeight: FontWeight.w800,
                 color: Color(0xFFD9614C),
               ),
