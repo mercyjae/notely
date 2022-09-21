@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:notely/screens/note_creation.dart';
 import 'package:notely/screens/onboarding_screen.dart';
+import 'package:notely/screens/profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,6 +24,6 @@ class MyApp extends StatelessWidget {
             secondary: const Color(0xFFD9614C),
           ),
         ),
-        home: const OnboardingScreen());
+        home: const ProfileScreen());
   }
 }
