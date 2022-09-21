@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notely/screens/edit_note.dart';
-import 'package:notely/screens/note_creation.dart';
-import 'package:notely/screens/onboarding_screen.dart';
-import 'package:notely/screens/profile_screen.dart';
+import 'package:notely/screens/recent_notes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +22,6 @@ class MyApp extends StatelessWidget {
             secondary: const Color(0xFFD9614C),
           ),
         ),
-        home: const EditNote());
+        home: const RecentNotes());
   }
 }
