@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class NoteCard extends StatelessWidget {
   final String title;
-  final String body;
-  const NoteCard({Key? key, required this.title, required this.body})
+  final String description;
+  const NoteCard({Key? key, required this.title, required this.description})
       : super(key: key);
 
   @override
@@ -20,14 +20,14 @@ class NoteCard extends StatelessWidget {
         children: [
           Text(
             title,style: const TextStyle(
-              fontSize: 22,
+              fontSize: 18,
               fontWeight: FontWeight.w900,
               color: Color(0xFF403B36),
             ),
           ),
-          const SizedBox(height: 2),
+          const SizedBox(height: 5),
           Text(
-            body,
+            description,
             style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w700,
@@ -45,7 +45,7 @@ class NoteCard extends StatelessWidget {
 
 class Note {
   final String title;
-  final String body;
+  final String description;
 
-  const Note({required this.title, required this.body});
+  const Note({required this.title, required this.description});
 }

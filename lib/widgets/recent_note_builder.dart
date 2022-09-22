@@ -5,12 +5,11 @@ import 'package:notely/widgets/note_card.dart';
 class RecentNotesBuilder extends StatelessWidget {
   final List<Note> notes;
   const RecentNotesBuilder({Key? key, required this.notes}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MasonryGridView.builder(
       itemCount: notes.length,
-      padding: EdgeInsets.zero,
+      //padding: EdgeInsets.zero,
       gridDelegate: const SliverSimpleGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
       ),
@@ -18,7 +17,7 @@ class RecentNotesBuilder extends StatelessWidget {
       mainAxisSpacing: 8,
       itemBuilder: (context, index) {
         final note = notes[index];
-        return NoteCard(title: note.title, body: note.body);
+        return NoteCard(title: note.title, description: note.description);
       },
     );
   }

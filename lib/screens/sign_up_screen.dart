@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:notely/screens/premium_screen.dart';
+import 'package:notely/routes.dart';
 import 'package:notely/widgets/app_button.dart';
 import 'package:notely/widgets/app_textfield.dart';
 import 'package:google_fonts/google_fonts.dart';
-class CreateAccount extends StatefulWidget {
-  const CreateAccount({Key? key}) : super(key: key);
+class SignUpScreen extends StatefulWidget {
+  const SignUpScreen({Key? key}) : super(key: key);
 
   @override
-  State<CreateAccount> createState() => _CreateAccountState();
+  State<SignUpScreen> createState() => _SignUpScreenState();
 }
 
-class _CreateAccountState extends State<CreateAccount> {
+class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+   return Scaffold(
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -49,34 +49,31 @@ class _CreateAccountState extends State<CreateAccount> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(
-              height: 50,
+              height: 60,
             ),
             const AppTextField(
               title: 'Full Name',
               subtitle: 'Salman Khan',
             ),
             const SizedBox(
-              height: 20,
+              height: 30,
             ),
             const AppTextField(
               title: 'Email Address',
               subtitle: 'mesalmanwap@gmail.com',
             ),
             const SizedBox(
-              height: 20,
+              height: 30,
             ),
             const AppTextField(
               title: 'Password',
               subtitle: '#######',
             ),
             const SizedBox(
-              height: 110,
+              height: 60,
             ),
             AppButton(title: 'Create Account', onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const PremiumScreen()));
+           Navigator.of(context).pushNamed(AppRouter.subscribe);
             },),
 
             const SizedBox(
@@ -93,6 +90,7 @@ class _CreateAccountState extends State<CreateAccount> {
           ]),
         ),
       ),
-    );
+    );  
   }
 }
+

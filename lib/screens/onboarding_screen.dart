@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:notely/routes.dart';
 import 'package:notely/widgets/app_button.dart';
-import 'package:notely/screens/create_account_screen.dart';
 import 'package:notely/models/onboarding_model.dart';
 import 'package:google_fonts/google_fonts.dart';
 class OnboardingScreen extends StatefulWidget {
@@ -100,8 +100,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               height: 70,
             ),
             AppButton(title: 'GET STARTED', onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const CreateAccount()));
+              Navigator.of(context).pushNamed(AppRouter.signUp);
+                
             }, ),
 
             const SizedBox(

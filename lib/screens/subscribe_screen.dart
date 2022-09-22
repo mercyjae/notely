@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:notely/screens/onboarding_screen.dart';
+import 'package:notely/routes.dart';
 import 'package:notely/widgets/app_button.dart';
-class PremiumScreen extends StatefulWidget {
-  const PremiumScreen({Key? key}) : super(key: key);
+
+class SubscribeScreen extends StatefulWidget {
+  const SubscribeScreen({Key? key}) : super(key: key);
 
   @override
-  State<PremiumScreen> createState() => _PremiumScreenState();
+  State<SubscribeScreen> createState() => _SubscribeScreenState();
 }
 
-class _PremiumScreenState extends State<PremiumScreen> {
+class _SubscribeScreenState extends State<SubscribeScreen> {
   int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -191,23 +192,24 @@ class _PremiumScreenState extends State<PremiumScreen> {
                 ],
               ),
               const SizedBox(
-                height: 70,
+                height: 60,
               ),
             AppButton(title: 'SUBSCRIBE',
                   onTap: (){
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) =>  const OnboardingScreen()));}),
+                   Navigator.of(context).pushNamed(AppRouter.noteCreation);}),
               const SizedBox(
                 height: 20,
               ),
-              const Text(
-                'Restore Purchase',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w800,
-                  color: Color(0xFFD9614C),
+              InkWell(onTap: (){
+                Navigator.of(context).pushNamed(AppRouter.profile);
+              },
+                child: const Text(
+                  'Restore Purchase',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w800,
+                    color: Color(0xFFD9614C),
+                  ),
                 ),
               ),
             ],

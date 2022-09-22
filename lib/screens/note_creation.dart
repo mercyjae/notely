@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:notely/routes.dart';
 import 'package:notely/widgets/app_button.dart';
 
 class NoteCreation extends StatefulWidget {
@@ -30,7 +31,7 @@ class _NoteCreationState extends State<NoteCreation> {
       body: Center(
         child: Column(children: [
           const SizedBox(
-            height: 70,
+            height: 90,
           ),
           Image.asset('assets/images/note.png'),
           const SizedBox(
@@ -59,18 +60,24 @@ class _NoteCreationState extends State<NoteCreation> {
             textAlign: TextAlign.center,
           ),
           const SizedBox(
-            height: 40,
+            height: 70,
           ),
-          AppButton(title: 'Create A Note', onTap: () {}),
+          AppButton(title: 'Create A Note', onTap: () {
+              Navigator.of(context).pushNamed(AppRouter.editNote);
+          }),
           const SizedBox(
             height: 20,
           ),
-          const Text(
-            'Import Notes',
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w800,
-              color: Color(0xFFD9614C),
+          InkWell(onTap: (){
+            Navigator.of(context).pushNamed(AppRouter.recentNote);
+          },
+            child: const Text(
+              'Import Notes',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w800,
+                color: Color(0xFFD9614C),
+              ),
             ),
           )
         ]),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notely/screens/recent_notes.dart';
+import 'package:notely/routes.dart'; 
 
 void main() {
   runApp(const MyApp());
@@ -18,10 +18,12 @@ class MyApp extends StatelessWidget {
           fontFamily: 'Nunito',
           colorScheme: ColorScheme.fromSwatch(
             primarySwatch: Colors.blue,
-          ).copyWith(
+          ).copyWith( 
             secondary: const Color(0xFFD9614C),
           ),
         ),
-        home: const RecentNotes());
+        onGenerateRoute: AppRouter.onGenerateRoute,
+        initialRoute: AppRouter.onboarding);
+        
   }
 }
