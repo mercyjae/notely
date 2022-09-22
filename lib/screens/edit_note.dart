@@ -42,27 +42,47 @@ class EditNote extends StatelessWidget {
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             TextFormField(
-              cursorColor: Colors.orange,
-              maxLines: null,
+              style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w900,
+              color: Color(0xFF403B36),
+            ),
+              cursorColor: Colors.black,
               decoration: const InputDecoration(
                 border: InputBorder.none,
                 focusedBorder: UnderlineInputBorder(),
                 hintText: 'Title',
+                hintStyle:  TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w900,
+              color: Color(0xFF403B36),
+            ),
               ),
               inputFormatters: [
                 LengthLimitingTextInputFormatter(100),
               ],
             ),
             TextFormField(
-              cursorColor: Colors.orange,
+              style: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w700,
+              color: Color(0xFF403B36),
+            ),
+      
+              cursorColor: Colors.black,
+              maxLines: null,
               decoration: const InputDecoration(
                 border: InputBorder.none,
-                focusedBorder: UnderlineInputBorder(),
                 hintText: 'Description',
+                 hintStyle:  TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w700,
+              color: Color(0xFF403B36),
+            ),
+         
               ),
-              inputFormatters: [
-                LengthLimitingTextInputFormatter(100),
-              ],
+                textAlign: TextAlign.justify,
+              
             ),
           ]),
         ));
