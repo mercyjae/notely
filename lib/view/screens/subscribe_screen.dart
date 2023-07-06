@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:notely/routes.dart';
-import 'package:notely/widgets/app_button.dart';
+import 'package:notely/view/widgets/app_button.dart';
 
 class SubscribeScreen extends StatefulWidget {
   const SubscribeScreen({Key? key}) : super(key: key);

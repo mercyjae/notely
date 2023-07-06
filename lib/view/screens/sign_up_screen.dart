@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:notely/routes.dart';
-import 'package:notely/widgets/app_button.dart';
-import 'package:notely/widgets/app_textfield.dart';
+import 'package:notely/view/widgets/app_button.dart';
+import 'package:notely/view/widgets/app_textfield.dart';
 import 'package:google_fonts/google_fonts.dart';
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);

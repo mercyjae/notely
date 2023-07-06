@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:notely/widgets/note_card.dart';
-import 'package:notely/widgets/recent_note_builder.dart';
+import 'package:notely/view/widgets/note_card.dart';
+import 'package:notely/view/widgets/recent_note_builder.dart';
 
 class RecentNotes extends StatefulWidget {
   const RecentNotes({Key? key}) : super(key: key);

@@ -1,12 +1,12 @@
 
 import 'package:flutter/material.dart';
-import 'package:notely/screens/sign_up_screen.dart';
-import 'package:notely/screens/edit_note.dart';
-import 'package:notely/screens/note_creation.dart';
-import 'package:notely/screens/onboarding_screen.dart';
-import 'package:notely/screens/profile_screen.dart';
-import 'package:notely/screens/recent_notes.dart';
-import 'package:notely/screens/subscribe_screen.dart';
+import 'package:notely/view/screens/sign_up_screen.dart';
+import 'package:notely/view/screens/edit_note.dart';
+import 'package:notely/view/screens/note_creation.dart';
+import 'package:notely/view/screens/onboarding_screen.dart';
+import 'package:notely/view/screens/profile_screen.dart';
+import 'package:notely/view/screens/recent_notes.dart';
+import 'package:notely/view/screens/subscribe_screen.dart';
 
 class AppRouter{
   const AppRouter._();

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notely/routes.dart';
-import 'package:notely/widgets/app_button.dart';
+import 'package:notely/view/widgets/app_button.dart';
 import 'package:notely/models/onboarding_model.dart';
 import 'package:google_fonts/google_fonts.dart';
 class OnboardingScreen extends StatefulWidget {
