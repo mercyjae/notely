@@ -29,11 +29,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ),
              Text(
               'NOTELY',
-              style: GoogleFonts.nunito(fontSize: 20,fontWeight: FontWeight.w900),
+              style: GoogleFonts.nunito(fontSize: 20,
+              fontWeight: FontWeight.w900),
 
             ),
-            const SizedBox(
-              height: 90,
+             const SizedBox(
+              height: 50,
             ),
             Expanded(
               child: PageView.builder(

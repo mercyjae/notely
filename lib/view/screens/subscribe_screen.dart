@@ -118,9 +118,9 @@ class _SubscribeScreenState extends State<SubscribeScreen> {
                                   ?
                               const Color(0xFFD9614C) : Colors.white),
                           borderRadius: BorderRadius.circular(10)),
-                      child: Column(
+                      child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
+                          children: [
                             Text('Annual',style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w500,
@@ -162,9 +162,9 @@ class _SubscribeScreenState extends State<SubscribeScreen> {
                                   ? const Color(0xFFD9614C)
                                   : Colors.white),
                           borderRadius: BorderRadius.circular(10)),
-                      child: Column(
+                      child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
+                          children: [
                             Text('Monthly',style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w500,

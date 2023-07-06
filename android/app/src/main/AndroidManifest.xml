@@ -2,7 +2,7 @@
     package="com.example.notely">
    <uses-permission android:name="android.permission.INTERNET" />
    <application
-        android:label="notely"
+        android:label="Notely"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

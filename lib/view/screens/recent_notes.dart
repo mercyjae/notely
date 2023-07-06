@@ -26,9 +26,9 @@ class _RecentNotesState extends State<RecentNotes> {
         ),
         centerTitle: true,
         backgroundColor: Colors.transparent,
-      ),body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal:15),
-        child: Column(children: const [
+      ),body: const Padding(
+        padding:  EdgeInsets.symmetric(horizontal:15),
+        child: Column(children: [
           Expanded(
                 child: RecentNotesBuilder(
                   notes: [
