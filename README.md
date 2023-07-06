@@ -1,16 +1,14 @@
-# notely
+# Notely
 
-A new Flutter project.
+ Notely is a note-taking UI application built for creating, organizing, and storing digital notes.
 
-## Getting Started
+## Figma Design Link
+https://www.figma.com/file/YvHqurMGy6vlyr9zTKl2WW/Note-Taking-Mobile-App-(Community)?type=design&node-id=101-226&mode=design&t=82tZoW7Z0bWr5ws7-0
 
-This project is a starting point for a Flutter application.
+## Video Demo
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+https://github.com/mercyjae/notely/assets/83911888/4a5c51b0-0241-4659-835e-5b9e4c32745b
+
